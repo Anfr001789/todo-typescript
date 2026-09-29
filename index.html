@@ -1,21 +1,26 @@
 <!DOCTYPE html>
 <html lang="id">
-
 <head>
-    <meta charset="UTF-8">
-    <title>To-Do Module</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>To-Do TypeScript</title>
 </head>
-
 <body>
-    <form id="todoForm">
-        <input id="todoInput" placeholder="Masukkan tugas">
-        <button type="submit">Tambah</button>
-    </form>
+  <h1>To-Do List</h1>
 
-    <ul id="todoList"></ul>
+  <form id="todoForm">
+    <input
+      id="todoInput"
+      type="text"
+      placeholder="Masukkan tugas"
+    >
 
-    <!-- type="module" diperlukan agar import/export dapat digunakan -->
-    <script type="module" src="./src/main.js"></script>
+    <button type="submit">Tambah</button>
+  </form>
+
+  <ul id="todoList"></ul>
+
+  <!-- Yang dijalankan browser adalah file hasil kompilasi -->
+  <script type="module" src="./dist/main.js"></script>
 </body>
-
 </html>
