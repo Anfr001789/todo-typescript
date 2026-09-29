@@ -1,0 +1,16 @@
+# Dependency dari npm
+node_modules/
+
+# Hasil kompilasi TypeScript
+dist/
+
+# File konfigurasi rahasia
+.env
+.env.local
+
+# File sistem operasi
+.DS_Store
+Thumbs.db
+
+# File editor
+.vscode/
